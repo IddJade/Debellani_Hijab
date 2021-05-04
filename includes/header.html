@@ -1,0 +1,55 @@
+
+<html>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+ <style>
+      body,h1,h2,h3,h4,h5,h6, p {font-family: "Karma", sans-serif}
+      ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: brown;
+}
+
+li {
+  float: left;
+}
+
+li.logout { 
+  float: right;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+div.head { 
+    padding: 20px;
+    width: 1200px;
+    float: center;
+}
+</style>
+<body>
+  <head><title>Delicacies Accessories</title></head>
+  <?php 
+  if(!isset($_SESSION["sess_email"])){
+ <div class="head">    
+<ul>
+<li><h1><a class="active" href="index.php">HOME</a></h1></li>
+<li><h1><a href="contact">Contact</a></h1></li>
+<li><h1><a href="about">About</a></h1></li>
+<li class="logout"><a href="logout.php">Sign Out</a></li>
+ </ul></div>
+ ?> 
+</html>
